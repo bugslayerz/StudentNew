@@ -1,0 +1,20 @@
+﻿@model StudentMonitor.StudentEntities8
+
+
+@{
+    ViewBag.Title = "Timetablemain";
+}
+
+<h2>Timetablemain</h2>
+
+<<p>
+    <ul>@Html.ActionLink("Standard 1", "TimeTable1", "TT1")</ul>
+
+    <ul>@Html.ActionLink("Standard 2", "TimeTable2", "TT2")</ul>
+    <ul>@Html.ActionLink("Standard 3", "TimeTable3", "TT3")</ul>
+    <ul>@Html.ActionLink("Standard 4", "TimeTable4", "TT4")</ul>
+    <ul>@Html.ActionLink("Standard 5", "TimeTable5", "TT5")</ul>
+</p> 
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

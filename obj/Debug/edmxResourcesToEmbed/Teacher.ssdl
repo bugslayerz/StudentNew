@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentModel4.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="STUDENTS">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="STD" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AGE" Type="int" Nullable="false" />
+    <Property Name="ADDRESS" Type="char" MaxLength="30" />
+    <Property Name="FNAME" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MNAME" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TNAME" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="20" />
+    <Property Name="PHONE" Type="int" />
+  </EntityType>
+  <EntityType Name="TEACHERS">
+    <Key>
+      <PropertyRef Name="TID" />
+    </Key>
+    <Property Name="TID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="STD" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AGE" Type="int" Nullable="false" />
+    <Property Name="ADDRESS" Type="char" MaxLength="30" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="20" />
+    <Property Name="PHONE" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Student.dbo.UserProfile' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="Role" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="Role" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="StudentModel4StoreContainer">
+    <EntitySet Name="STUDENTS" EntityType="Self.STUDENTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TEACHERS" EntityType="Self.TEACHERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserProfile" EntityType="Self.UserProfile" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UserProfile].[UserId] AS [UserId], 
+    [UserProfile].[UserName] AS [UserName], 
+    [UserProfile].[Password] AS [Password], 
+    [UserProfile].[IsActive] AS [IsActive], 
+    [UserProfile].[Role] AS [Role]
+    FROM [dbo].[UserProfile] AS [UserProfile]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

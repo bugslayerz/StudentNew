@@ -1,0 +1,56 @@
+﻿
+@model StudentMonitor.UserProfile
+
+@{
+    ViewBag.Title = "Login";
+}
+
+    <body style="background-color:powderblue;">
+        @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+        {
+
+            <fieldset>
+                <br/><br/>
+                <font size="5" color="Brown" face="Verdana" >
+                    <legend>Welcome To Student Tracking System</legend>
+                </font>
+                <br/>
+                <br/>
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                @if (@ViewBag.Message != null)
+                {
+                    <div style="border: 1px solid red">
+                        @ViewBag.Message
+                    </div>
+                }
+                <table>
+                    <tr>
+                        <td>@Html.LabelFor(a => a.UserName)</td>
+                        <td>@Html.TextBoxFor(a => a.UserName)</td>
+                        <td>@Html.ValidationMessageFor(a => a.UserName)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(a => a.Password)
+                        </td>
+                        <td>
+                            @Html.PasswordFor(a => a.Password)
+                        </td>
+                        <td>
+                            @Html.ValidationMessageFor(a => a.Password)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Login" />
+                           
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+        }
+
+        </body>/>

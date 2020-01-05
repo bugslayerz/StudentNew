@@ -1,0 +1,39 @@
+﻿@model StudentMonitor.UserProfile
+@{
+    ViewBag.Title = "LandingPage";
+}
+
+<h2>LandingPage</h2>
+
+
+@{
+    ViewBag.Title = "LandingPage";
+}
+
+<fieldset>
+
+
+    @if (@Session["Role"].Equals("1"))
+    {
+        @Html.Label("Welcome Admin") <br />
+        @Html.ActionLink("Register A Student", "RegisterStudent", "Registration");<br />
+        @Html.ActionLink("Register A Teacher", "RegisterTeacher", "Registerteacher");<br />
+       // @Html.ActionLink("Class TimeTable", "Timetablemain", "Timetablemain");<br />
+
+
+    }
+    else if (@Session["Role"].Equals("2"))
+    {
+        @Html.Label("Welcome Teacher")
+        <br />
+        @Html.ActionLink("View Student Details", "ViewStudent", "StudentDetails");<br />
+
+    }
+    else if (@Session["Role"].Equals("3"))
+    {
+        @Html.Label("Welcome Parent")
+
+    }
+
+</fieldset>
+

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentModel5" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TimeTable_1">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_2">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_3">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_4">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_5">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="StudentEntities8" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TimeTable_1" EntityType="Self.TimeTable_1" />
+    <EntitySet Name="TimeTable_2" EntityType="Self.TimeTable_2" />
+    <EntitySet Name="TimeTable_3" EntityType="Self.TimeTable_3" />
+    <EntitySet Name="TimeTable_4" EntityType="Self.TimeTable_4" />
+    <EntitySet Name="TimeTable_5" EntityType="Self.TimeTable_5" />
+    <FunctionImport Name="sp_timetable1" ReturnType="Collection(StudentModel5.sp_timetable1_Result)" />
+    <FunctionImport Name="sp_timetable2" ReturnType="Collection(StudentModel5.sp_timetable2_Result)" />
+    <FunctionImport Name="sp_timetable3" ReturnType="Collection(StudentModel5.sp_timetable3_Result)" />
+    <FunctionImport Name="sp_timetable4" ReturnType="Collection(StudentModel5.sp_timetable4_Result)" />
+    <FunctionImport Name="sp_timetable5" ReturnType="Collection(StudentModel5.sp_timetable5_Result)" />
+  </EntityContainer>
+  <ComplexType Name="sp_timetable1_Result">
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_timetable2_Result">
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_timetable3_Result">
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_timetable4_Result">
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_timetable5_Result">
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+  </ComplexType>
+</Schema>

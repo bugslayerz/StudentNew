@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentModel5.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TimeTable_1">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_2">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_3">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_4">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTable_5">
+    <Key>
+      <PropertyRef Name="Days" />
+    </Key>
+    <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Function Name="sp_timetable1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_timetable2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_timetable3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_timetable4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_timetable5" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="StudentModel5StoreContainer">
+    <EntitySet Name="TimeTable_1" EntityType="Self.TimeTable_1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeTable_2" EntityType="Self.TimeTable_2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeTable_3" EntityType="Self.TimeTable_3" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeTable_4" EntityType="Self.TimeTable_4" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeTable_5" EntityType="Self.TimeTable_5" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

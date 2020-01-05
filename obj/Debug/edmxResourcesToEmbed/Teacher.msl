@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudentModel4StoreContainer" CdmEntityContainer="StudentEntities5">
+    <EntitySetMapping Name="STUDENTS">
+      <EntityTypeMapping TypeName="StudentModel4.STUDENT">
+        <MappingFragment StoreEntitySet="STUDENTS">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="STD" ColumnName="STD" />
+          <ScalarProperty Name="AGE" ColumnName="AGE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="FNAME" ColumnName="FNAME" />
+          <ScalarProperty Name="MNAME" ColumnName="MNAME" />
+          <ScalarProperty Name="TNAME" ColumnName="TNAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEACHERS">
+      <EntityTypeMapping TypeName="StudentModel4.TEACHER">
+        <MappingFragment StoreEntitySet="TEACHERS">
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="STD" ColumnName="STD" />
+          <ScalarProperty Name="AGE" ColumnName="AGE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="StudentModel4.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
